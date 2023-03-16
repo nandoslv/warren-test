@@ -46,7 +46,7 @@ export default createStore({
   },
   actions: {
     async carregarTransacoes({ commit }) {
-      await axios.get("https://warren-transactions-api.herokuapp.com/api/transactions")
+      await axios.get("https://api-profile.vercel.app/transaction")
         .then((response) => {
           commit('carregarTransacoes', response.data);
         }).catch((error) => {
@@ -54,7 +54,7 @@ export default createStore({
         })
     },
     async carregarDetalhe({ commit }, id) {
-      await axios.get(`https://warren-transactions-api.herokuapp.com/api/transactions/${id}`)      
+      await axios.get(`https://api-profile.vercel.app/transaction/${id}`)      
         .then((response) => {
           commit('carregarDetalhe', response.data);
         }).catch((error) =>{
