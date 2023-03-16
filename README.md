@@ -1,6 +1,5 @@
 # Warren Transacoes - Test
 
-Projeto desenvolvido para o teste de seleção de Frontend Developer da Warren.
 O projeto consiste numa aplicação que consome uma API de Transações Financeira, com um endpoint que retorna uma lista Transações e outro com o Detalhamento da Transação.
 
 Conforme documentação disponibilizada, os requisitos da aplicação são:
